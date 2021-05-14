@@ -21,7 +21,7 @@ nav{
     display:flex;
     flex-direction: column;                                 
     height: 72%;
-    width: 25%;
+    width: 50%;
     justify-content: space-between;
     text-align: center;
     margin-bottom: 2vh;
@@ -32,6 +32,7 @@ a{
     color:white;
     text-decoration: none;
     font-weight: 300;
+    /* text-transform: uppercase; */
 }
 
 a:visited{
@@ -40,6 +41,9 @@ a:visited{
 
 a:hover{
     color: lightblue;
+    font-weight: bolder;
+    /* transform: scale(1.13); */
+    transition: all 0.2 s ease-in-out;
 }
 
 main{
