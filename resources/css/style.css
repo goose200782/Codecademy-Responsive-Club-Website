@@ -54,7 +54,7 @@ main{
     margin-top: 7vh;
     height: 16vh;
     background-color: brown;
-    color: lightblue;
+    color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -73,6 +73,11 @@ article{
 article > h3{
     font-size: 1.5rem;
     color: whitesmoke;
+    text-shadow: 0 0.3125rem 0.625rem midnightblue;
+}
+
+article > p > a{
+    color: blue;
     text-shadow: 0 0.3125rem 0.625rem midnightblue;
 }
 
@@ -109,4 +114,32 @@ aside > p {
     font-size: 0.9rem;
 }
 
+section{
+    display:flex;
+    margin: 10vh 0vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: brown;
+    color: white;
+    text-shadow: 0 0.3125rem 0.625rem midnightblue;
+    font-family:'1Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lastpic{
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 19vh;
+    background-color: midnightblue;
+    color: white;
+}
 
