@@ -21,7 +21,7 @@ nav{
     display:flex;
     flex-direction: column;                                 
     height: 72%;
-    width: 50%;
+    width: 88%;
     justify-content: space-between;
     text-align: center;
     margin-bottom: 2vh;
@@ -41,7 +41,8 @@ a:visited{
 
 a:hover{
     color: lightblue;
-    font-weight: bolder;
+    font-weight: 300;
+    /* font-size: .95rem; */
     /* transform: scale(1.13); */
     transition: all 0.2 s ease-in-out;
 }
@@ -94,6 +95,7 @@ article > p > a:visited{
     margin-top: 3vh;
     height: 50vh;
     object-fit: cover;
+    flex: 1 1;
 }
 
 aside{
@@ -108,6 +110,7 @@ aside{
     font-size: 1.15rem;
     line-height: 210%;
     text-shadow: 0 0.3125rem 0.625rem midnightblue;
+    justify-content: space-between;
 }
 
 aside > * {
@@ -116,6 +119,8 @@ aside > * {
 
 aside > p {
     font-size: 0.9rem;
+    margin: 0 0 0 5vw;
+    justify-self: flex-end;
 }
 
 section{
@@ -131,10 +136,15 @@ section{
     font-family:'1Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+section > h2{
+    margin-left: 3vw;
+}
+
 .lastpic{
     width: 50vw;
     height: 50vh;
     object-fit: cover;
+    flex: 1 1;
 }
 
 footer{
@@ -147,3 +157,37 @@ footer{
     color: white;
 }
 
+@media  screen and (min-width: 640px) {
+    nav{
+        flex-direction: row; 
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 8vh;
+        margin-left: -12vw;
+        margin-bottom: 2vh;
+    }
+
+    nav > div {
+        margin-left: 12vw;
+        
+    }
+
+    header{
+        text-align: left;
+        height: 8vh;
+    }
+
+    footer{
+        text-align: left;
+        height: 8vh;
+    }
+
+
+    .banner{
+        margin-top: 27.5vh;
+    }
+
+    article{
+        margin-top: 38vh;
+    }
+}
