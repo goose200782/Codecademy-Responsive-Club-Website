@@ -91,6 +91,12 @@ article > p > a:visited{
     text-shadow: 0 0.3125rem 0.625rem midnightblue;
 }
 
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .image{
     margin-top: 3vh;
     height: 50vh;
@@ -189,5 +195,22 @@ footer{
 
     article{
         margin-top: 38vh;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    .imageContainer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .image{
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 33%;
+    }
+
+    .lastpic{
+        width: 40%;
     }
 }
