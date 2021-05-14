@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    height: 80%;
+    width: 25%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+    background-color: midnightblue;
+    color: white;
+}
+
+
